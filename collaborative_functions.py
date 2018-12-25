@@ -57,7 +57,7 @@ def resnick_algorithm(item_i,users, neighbourhood, required_user):
 	#get top
 	top = 0
 	bottom = 0
-	#neighbourhood[i] = [index, p_val]
+	#neighbourhood[i] = [pearson_value, user_id]
 	for n in neighbourhood:
 		pearson_value = n[0]
 		user_id = n[-1]
