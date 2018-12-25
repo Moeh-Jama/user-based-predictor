@@ -1,8 +1,5 @@
 import csv
 
-
-
-system_data = []
 def begin_system():
 	users = {}
 	# Type: users -> users[userID][itemID] = rating for item.
@@ -29,8 +26,3 @@ def begin_system():
 				movie_list.append(movie)
 			index+=1
 	return [users,movie_list]
-
-def movies_not_in_user_i(user_i, movie_list):
-	for movie in movie_list:
-		if movie[0] not in user_i:
-			print(movie)	#returns [movieID, movieName]
